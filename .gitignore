@@ -1,11 +1,11 @@
+﻿# Visual Studio / .NET
 .vs/
-*.userosscache
-*.sln.docstates
 bin/
 obj/
-Debug/
-Release/
-*.bak
-*.log
-*.ldf
-*.mdf
+packages/
+**/packages/
+
+# Angular / Node
+node_modules/
+dist/
+.angular/cache/
