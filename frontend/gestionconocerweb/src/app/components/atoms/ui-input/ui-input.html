@@ -1,1 +1,17 @@
-<p>ui-input works!</p>
+<div class="field">
+  <label class="field__label" [for]="id">
+    {{ label }}
+  </label>
+
+  <input
+    class="field__input"
+    [id]="id"
+    [type]="type"
+    [placeholder]="placeholder"
+    [attr.autocomplete]="autocomplete"
+    [value]="value"
+    [disabled]="disabled"
+    (input)="handleInput($event)"
+    (blur)="blur()"
+  />
+</div>
