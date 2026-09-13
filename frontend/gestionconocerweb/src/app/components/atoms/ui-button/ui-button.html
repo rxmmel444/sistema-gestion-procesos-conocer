@@ -1,1 +1,8 @@
-<p>ui-button works!</p>
+<button
+  class="ui-button"
+  [type]="type"
+  [disabled]="disabled"
+  (click)="handleClick()"
+>
+  {{ label }}
+</button>
