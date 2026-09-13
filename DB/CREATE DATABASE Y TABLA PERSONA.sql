@@ -1,0 +1,19 @@
+--CREATE DATABASE GestionProcesosConocer
+--GO
+
+USE GestionProcesosConocer
+GO
+
+--CREATE TABLE k_Persona
+--(
+--FL_PERSONA          BIGINT IDENTITY (1,1) PRIMARY KEY,
+--NB_PERSONA          VARCHAR(100),
+--NB_APELLIDO_PATERNO VARCHAR(80),
+--NB_APELLIDO_MATERNO VARCHAR (80),
+--FE_NACIMIENTO       DATETIME,
+--DS_CURP             VARCHAR(18),
+--DS_CORREO           VARCHAR (80),
+--FG_ACTIVO           BIT
+--)
+
+SELECT * FROM K_PERSONA

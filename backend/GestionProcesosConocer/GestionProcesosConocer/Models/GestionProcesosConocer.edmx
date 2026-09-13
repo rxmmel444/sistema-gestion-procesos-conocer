@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="GestionProcesosConocerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="k_Persona">
+          <Key>
+            <PropertyRef Name="FL_PERSONA" />
+          </Key>
+          <Property Name="FL_PERSONA" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NB_PERSONA" Type="varchar" MaxLength="100" />
+          <Property Name="NB_APELLIDO_PATERNO" Type="varchar" MaxLength="80" />
+          <Property Name="NB_APELLIDO_MATERNO" Type="varchar" MaxLength="80" />
+          <Property Name="FE_NACIMIENTO" Type="datetime" />
+          <Property Name="DS_CURP" Type="varchar" MaxLength="18" />
+          <Property Name="DS_CORREO" Type="varchar" MaxLength="80" />
+          <Property Name="FG_ACTIVO" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="GestionProcesosConocerModelStoreContainer">
+          <EntitySet Name="k_Persona" EntityType="Self.k_Persona" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GestionProcesosConocerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="k_Persona">
+          <Key>
+            <PropertyRef Name="FL_PERSONA" />
+          </Key>
+          <Property Name="FL_PERSONA" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NB_PERSONA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="NB_APELLIDO_PATERNO" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="NB_APELLIDO_MATERNO" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="FE_NACIMIENTO" Type="DateTime" Precision="3" />
+          <Property Name="DS_CURP" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+          <Property Name="DS_CORREO" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="FG_ACTIVO" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="GestionProcesosConocerEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="k_Persona" EntityType="Self.k_Persona" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GestionProcesosConocerModelStoreContainer" CdmEntityContainer="GestionProcesosConocerEntities1">
+          <EntitySetMapping Name="k_Persona">
+            <EntityTypeMapping TypeName="GestionProcesosConocerModel.k_Persona">
+              <MappingFragment StoreEntitySet="k_Persona">
+                <ScalarProperty Name="FL_PERSONA" ColumnName="FL_PERSONA" />
+                <ScalarProperty Name="NB_PERSONA" ColumnName="NB_PERSONA" />
+                <ScalarProperty Name="NB_APELLIDO_PATERNO" ColumnName="NB_APELLIDO_PATERNO" />
+                <ScalarProperty Name="NB_APELLIDO_MATERNO" ColumnName="NB_APELLIDO_MATERNO" />
+                <ScalarProperty Name="FE_NACIMIENTO" ColumnName="FE_NACIMIENTO" />
+                <ScalarProperty Name="DS_CURP" ColumnName="DS_CURP" />
+                <ScalarProperty Name="DS_CORREO" ColumnName="DS_CORREO" />
+                <ScalarProperty Name="FG_ACTIVO" ColumnName="FG_ACTIVO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

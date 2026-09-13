@@ -1,0 +1,11 @@
+.vs/
+*.userosscache
+*.sln.docstates
+bin/
+obj/
+Debug/
+Release/
+*.bak
+*.log
+*.ldf
+*.mdf
