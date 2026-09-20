@@ -1,0 +1,20 @@
+<!-- Barra de navegación principal del sistema -->
+<nav class="main-navbar">
+
+  <!-- Lista de opciones del menu -->
+  <ul class="main-navbar__list">
+
+    <!-- Recorre las opciones definidas en el componente y pinta cada elemento del menu -->
+    @for (item of menuItems; track item.label) {
+      <li class="main-navbar__item">
+
+        <!-- Enlace de navegacion. La ruta se ajustara cuando existan las pantallas correspondientes -->
+        <a class="main-navbar__link" [href]="item.route">
+          {{ item.label }}
+        </a>
+
+      </li>
+    }
+
+  </ul>
+</nav>

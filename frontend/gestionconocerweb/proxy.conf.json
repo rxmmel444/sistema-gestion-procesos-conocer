@@ -1,6 +1,12 @@
 {
   "/api": {
-    "target": "https://localhost:44325",
+    "target": "https://localhost:44329",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/Token": {
+    "target": "https://localhost:44329",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "debug"

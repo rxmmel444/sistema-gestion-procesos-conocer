@@ -1,0 +1,25 @@
+<!-- Panel principal donde se muestran los comunicados del sistema -->
+<section class="comunicados-panel">
+
+  <!-- Texto introductorio dirigido a los prestadores de servicios -->
+  <p class="comunicados-panel__intro">
+    Estimados Prestadores de Servicios, se informa que es responsabilidad de la ECE/OC
+    mantener actualizada la información que se muestra en su módulo administrativo.
+  </p>
+
+  <!-- Título de la sección de comunicados -->
+  <h2 class="comunicados-panel__title">Comunicados</h2>
+
+  <!-- Lista de comunicados -->
+  <div class="comunicados-panel__list">
+
+    <!-- Recorre el arreglo de comunicados y pinta un componente por cada registro -->
+    @for (comunicado of comunicados; track comunicado.titulo) {
+      <app-comunicado-item
+        [titulo]="comunicado.titulo"
+        [textoLink]="comunicado.textoLink"
+      />
+    }
+
+  </div>
+</section>

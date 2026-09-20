@@ -1,0 +1,38 @@
+.home-page {
+  min-height: 100vh;
+  background-color: #f4f5f7;
+}
+
+.home-page__content {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 42px 32px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.home-page__logo-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.home-page__panel-section {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .home-page__content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 20px;
+  }
+
+  .home-page__logo-section,
+  .home-page__panel-section {
+    justify-content: center;
+  }
+}
