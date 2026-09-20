@@ -1,0 +1,25 @@
+.comunicado-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.comunicado-item:last-child {
+  border-bottom: none;
+}
+
+.comunicado-item__title {
+  margin: 0;
+  color: #1f2937;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.comunicado-item__link {
+  display: inline-block;
+  margin-top: 2px;
+  color: #0066cc;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+}

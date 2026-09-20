@@ -1,0 +1,27 @@
+.comunicados-panel {
+  width: 520px;
+  padding: 24px 28px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 10%);
+}
+
+.comunicados-panel__intro {
+  margin: 0 0 18px;
+  color: #374151;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.comunicados-panel__title {
+  margin: 0 0 8px;
+  color: #243c5a;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.comunicados-panel__list {
+  display: flex;
+  flex-direction: column;
+}
